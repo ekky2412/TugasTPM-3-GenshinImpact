@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/bg"
+tools:context=".activity.DetailKarakterActivity"
+    >
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/cardview_dark_background"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvNamaKarakter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diluc"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/ivRarityKarakter"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_5_stars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:id="@+id/ivGambarSenjata"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/claymore_icon" />
+
+            <TextView
+                android:id="@+id/tvNamaSenjata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="Claymore"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/ivGambarKarakter"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/diluc" />
+
+        <TextView
+            android:id="@+id/tvDeskripsiKarakter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:justificationMode="inter_word"
+            android:text="Terlahir dalam Keluarga Ragnvindr yang makmur, Diluc adalah pemilik Dawn Winery saat ini dan seorang bangsawan yang sangat dihormati di masyarakat Mondstadt. Sementara insiden masa lalu menyebabkan dia berpisah dengan Ksatria Favonius, dia terus melindungi Mondstadt dengan caranya sendiri."
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+</ScrollView>
